@@ -1,3 +1,12 @@
 {
-    "eslint.enable": false
+  "cSpell.words": [
+    "drei",
+    "gltf"
+  ],
+  "files.exclude": {
+    ".gitignore": false,
+    ".vscode": false,
+    "node_modules": false,
+    "package-lock.json": false
+  }
 }

@@ -1,22 +1,32 @@
 import React from "react";
-import  { Canvas } from 'react-three-fiber';
-import {OrbitControls} from "@react-three/drei";
+import { Canvas } from "react-three-fiber";
+import { Controls, ControlsProvider } from "react-three-gui";
+import Content from "App/Content";
 
-import { Convert } from "App/utils";
-import { Clock } from "App/components";
 import "./styles.css";
+
 export default () => {
+  // const port = 3001;
+  // const socket = io(`http://localhost:${port}`);
 
-    return (
-        <Canvas>
-            {true && < OrbitControls/>}
-            {/* {true && <axesHelper/>} */}
-            <Clock/>
-            {/* <mesh rotation={[0, 0, Convert.toRadians(45)]}>
-                <boxBufferGeometry args={[1, 2, 1]}/>
-                <meshMatcapMaterial color="#ddd"/>
+  // socket.on("connect", () => {
+  //   console.log("Socket connected: ", socket.connected);
+  // });
 
-            </mesh> */}
-        </Canvas>
-    )
-}
+  // socket.on("disconnect", () => {
+  //   console.log("Socket connected: ", socket.connected);
+  // });
+
+  // socket.on("telemetry", (message) => {
+  //   console.log("Message:", message);
+  // });
+
+  return (
+    <ControlsProvider>
+      <Canvas invalidateFrameloop={false} shadowMap>
+        <Content />
+      </Canvas>
+      <Controls title="Controls" />
+    </ControlsProvider>
+  );
+};
