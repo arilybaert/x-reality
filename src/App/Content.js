@@ -98,7 +98,7 @@ export default () => {
 
   const carlightSwitch = useControl("Switch light", { 
     type: "boolean", 
-    value: false
+    value: true
   });
 
   function showLighting(name) {
