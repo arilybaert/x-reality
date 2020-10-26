@@ -71,12 +71,12 @@ export default () => {
     value: false,
   });
 
-  const useComponent = useControl("Component", {
-    group: "General",
-    type: "select",
-    value: components[14],
-    items: components,
-  });
+  // const useComponent = useControl("Component", {
+  //   group: "General",
+  //   type: "select",
+  //   value: components[14],
+  //   items: components,
+  // });
   const useLighting = useControl("Lighting", {
     group: "General",
     type: "select",
@@ -87,12 +87,12 @@ export default () => {
   const showAxesHelper = useControl("Axes Helper", {
     group: "Helpers",
     type: "boolean",
-    value: true,
+    value: false,
   });
   const showGridHelper = useControl("Grid Helper", {
     group: "Helpers",
     type: "boolean",
-    value: true,
+    value: false,
   });
 
 
