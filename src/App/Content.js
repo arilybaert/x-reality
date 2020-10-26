@@ -47,6 +47,7 @@ export default () => {
     "Suzanne (Normal Texture)",
     "Suzanne (Standard Material)",
     "Suzanne (Toon Material)",
+    "ToyCar",
     "Tripod",
   ];
 
@@ -74,7 +75,7 @@ export default () => {
   const useComponent = useControl("Component", {
     group: "General",
     type: "select",
-    value: components[14],
+    value: components[16],
     items: components,
   });
   const useLighting = useControl("Lighting", {
@@ -134,7 +135,7 @@ export default () => {
       {showLighting("Studio Lighting + GUI") && <LightingStudioGui />}
       {showLighting("Three Point Lighting") && <LightingThreePoint />}
       {showLighting("Three Point Lighting + GUI") && <LightingThreePointGui />}
-      {/* {showComponent("Button") && <Button />}
+      {showComponent("Button") && <Button />}
       {showComponent("Button (React Spring)") && <ButtonSpring />}
       {showComponent("Clock") && <Clock />}
       {showComponent("Cube") && <Cube />}
@@ -147,12 +148,13 @@ export default () => {
         />
       )}
       {showComponent("Face") && <Face />}
-      {showComponent("Gauge") && <Gauge />} */}
+      {showComponent("Gauge") && <Gauge />}
       {true && (
         <Suspense fallback={null}>
-          <ToyCar light={carlightSwitch}/>
+          
+          {showComponent("ToyCar") && <ToyCar light={carlightSwitch}/>}
           <Floor/>
-          {/* {showComponent("GlTransmissionFormat") && <GlTransmissionFormat />}
+          {showComponent("GlTransmissionFormat") && <GlTransmissionFormat />}
           {showComponent("Spring") && <Spring />}
           {showComponent("Spring (Props)") && <SpringProps />}
           {showComponent("Suzanne (default)") && <Suzanne />}
@@ -165,7 +167,7 @@ export default () => {
           {showComponent("Suzanne (Standard Material)") && (
             <SuzanneStandardMaterial />
           )}
-          {showComponent("Suzanne (Toon Material)") && <SuzanneToonMaterial />} */}
+          {showComponent("Suzanne (Toon Material)") && <SuzanneToonMaterial />}
         </Suspense>
       )}
       {showComponent("Tripod") && <Tripod />}
