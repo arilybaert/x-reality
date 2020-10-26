@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "214bb359c4ea4e977e453e1f36ab982a",
+    "revision": "1b7ff8c4b948a5c79cb3aaf6aa422161",
     "url": "/x-reality/index.html"
   },
   {
-    "revision": "dbf3dfd03f44bfcc141a",
+    "revision": "314d37715a81892915c6",
     "url": "/x-reality/static/css/main.36c22187.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/x-reality/static/js/2.09d5909f.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "dbf3dfd03f44bfcc141a",
-    "url": "/x-reality/static/js/main.13b626c5.chunk.js"
+    "revision": "314d37715a81892915c6",
+    "url": "/x-reality/static/js/main.6f38d132.chunk.js"
   },
   {
     "revision": "3d359f0097e749eb6ee5",
